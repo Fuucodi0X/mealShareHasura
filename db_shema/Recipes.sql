@@ -1,3 +1,5 @@
+-- Creating tables and relaiton for mealshare (init project)
+
 CREATE TABLE "recipes" (
   "id" serial PRIMARY KEY,
   "user_id" serial,
@@ -87,3 +89,11 @@ ALTER TABLE "likes" ADD FOREIGN KEY ("user_id") REFERENCES "users" ("id");
 ALTER TABLE "reviews" ADD FOREIGN KEY ("recipe_id") REFERENCES "recipes" ("id");
 
 ALTER TABLE "reviews" ADD FOREIGN KEY ("user_id") REFERENCES "users" ("id");
+
+
+-- Adding emali to user with unique constrain (forgot to add it in the init)
+ALTER TABLE "users" ADD "email" varchar(200) UNIQUE;
+
+-- Adding time field for each steps
+
+ALTER TABLE "steps" ADD "duration" INTERVAL NOT NULL;
