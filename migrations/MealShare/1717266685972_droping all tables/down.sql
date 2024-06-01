@@ -1,0 +1,9 @@
+-- Could not auto-generate a down migration.
+-- Please write an appropriate down migration for the SQL below:
+-- DROP TABLE bookmarks CASCADE;
+-- DROP TABLE follows CASCADE;
+-- DROP TABLE ingredients CASCADE;
+-- DROP TABLE likes CASCADE;
+-- DROP TABLE recipes CASCADE;
+-- DROP TABLE reviews CASCADE;
+-- DROP TABLE steps CASCADE;
