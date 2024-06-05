@@ -1,0 +1,7 @@
+function:
+  name: search_recipes
+  schema: public
+configuration:
+  custom_name: search_recipes
+  custom_root_fields:
+    function_aggregate: search_recipes_aggregate
